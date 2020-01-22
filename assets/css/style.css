@@ -1,0 +1,212 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+* {
+    box-sizing: border-box;
+}
+a, p{
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1,h2 {
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container {
+    width: 900px;
+    margin: 0 auto;
+}
+.section-main {
+    background-color: #737dbf;
+    padding-top: 150px;
+    padding-bottom: 50px;
+    box-shadow: 1px 1px 6px grey;
+    margin-bottom: 90px;
+}
+.section-about {
+    padding: 50px 0 150px 0;
+}
+.avatar {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background-image: url(../img/avatar2.jpg);
+    background-position: center;
+    background-size: cover;
+    margin: 0 auto;
+    box-shadow: 1px 1px 5px grey;
+}
+h1 {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 52px;
+    font-weight: 900;
+    margin: 40px 0;
+    color: white;
+    text-align: center;
+}
+.short-desc {
+    text-align: center;
+    font-size: 20px;
+    color: white; 
+    font-weight: 300;
+}
+.links-container a{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-weight: 300;
+    text-align: center;
+}
+.links-container {
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+}
+.links {
+    width: 210px;
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+}
+.links a img {
+    height: 30px;
+}
+h2 {
+    color: rgb(239, 111, 108);
+    font-size: 32px;
+    font-weight: 700;
+}
+.long-desc {
+    font-size: 22px;
+}
+ul {
+    list-style-type: none;
+}
+.list-desc {
+    font-size: 22px;    
+}
+li {
+    font-size: 22px;
+    margin-bottom: 20px;
+    background: url(../img/infinity\ \(2\).png) no-repeat 0 2px; 
+    padding-left: 40px;
+    font-family: "Trebuchet MS";
+    font-style: italic;
+}
+
+
+.thoughts {
+    background-image: url('../img/kol.jpg');
+    height: 80vh;
+    background-attachment: fixed;
+    background-size: 100%;
+    background-position: top;
+    position: relative;
+    margin-bottom: 200px;
+}
+.quote {
+    font-size: 52px;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: block;
+    font-weight: 700;
+    text-align: center;
+}
+.dark-back {
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 0.5;
+}
+
+.consultation {
+    background-color: rgb(239, 111, 108);
+    padding: 70px 0;
+    margin-bottom: 60px;
+}
+.consultation h2 {
+    color: white
+}
+.consultation p {
+    font-size: 20px;
+    color: white;
+    margin-bottom: 50px;
+}
+.test-container {
+    display: flex;
+    justify-content: space-between;
+
+}
+.test {
+    width: 48%;
+    background-size: 100%;
+    background-position: center;
+    height: 270px;
+    box-shadow: 1px 1px 6px grey;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    transition: .3s;
+    
+}
+.test:hover {
+    box-shadow: #5a5a5a 1px 1px 10px;
+    transition: .3s;
+    background-size: 110%;
+    
+}
+.test1{
+    background-image: url('../img/holerasangvina.jpg');
+}
+.test2 {
+    background-image: url('../img/introexxtra.jpg');
+    background-size: 110%;
+}
+.test2:hover {
+    background-size: 120%;
+}
+.tests {
+    margin-bottom: 200px;
+}
+.btn {
+    font-size: 20px;
+    padding: 15px 25px;
+    border-radius: 30px;
+    background-color: white;
+    color: rgb(239, 111, 108);
+    box-shadow: 1px 2px 8px grey;
+    cursor: pointer;
+}
+.btn:hover {
+    box-shadow: 0px 0px 0px grey;
+    transition: .3s;
+}
+
+input {
+    width: 350px;
+    height: 60px;
+    padding: 0 20px;
+    border-radius: 30px;
+    outline: none;
+    font-size: 18px;
+    margin-bottom: 20px;
+    border: 1px solid rgb(239, 111, 108);
+}
+form {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgb(239, 111, 108);
+    border-radius: 5px;
+    padding: 30px;
+    box-shadow: 1px 2px 8px grey;
+    margin-bottom: 70px;
+}
+.submit {
+    width: 210px;
+    text-align: center;
+}
+.submit:hover {
+    box-shadow: 1px 2px 4px grey;
+}
