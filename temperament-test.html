@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Тип Личности</title>
+    <link rel="stylesheet" href="./assets/css/type.css">
+</head>
+<body>
+    <h1>Тест на тип личности</h1>
+    <div class="test">
+        <div class="question">
+            Готовы начать?
+        </div>
+        <div class="answers">
+            <a onclick="k++; switchQuestion()">
+                ДА
+            </a>
+        </div>
+    </div>
+</body>
+
+<script>
+    let a = 0; 
+    let b = 0; 
+    let k = 0;
+    function switchQuestion() {
+        switch (k){
+            case 1: firstQuestion();
+                break;
+            case 2: seconQuestion();
+                break;
+            case 3: thirdQuestion();
+                break;
+            case 4: fourthQuestion();
+                break;
+            case 5: fifthQuestion();
+                break;
+            case 6: sixthQuestion();
+                break;
+            case 7: seventhQuestion();
+                break;
+            case 8: eightsQuestion();
+                break;
+            case 9: ninthQuestion();
+                break;
+            case 10: answer();
+                break;
+        } 
+    }
+  
+    function firstQuestion() {
+        document.getElementsByClassName('question')[0].innerHTML = "Часто ли вы испытываете тягу к новым впечатлениям, чтобы отвлечься, испытать сильные ощущения?";    
+        document.getElementsByClassName('answers')[0].innerHTML = '<a onclick="k= k+1; a++; switchQuestion()">ДА</a> <a class="no-btn" onclick="k= k+1;b++; switchQuestion()"> НЕТ </a>';    
+    }
+    function seconQuestion() {
+        let question = "Быстро ли вы обычно действуете и говорите и не тратите ли много времени на обдумывание?";
+        document.getElementsByClassName('question')[0].innerHTML = question; 
+        document.getElementsByClassName('answers')[0].innerHTML = '<a onclick="k= k+1; a++; switchQuestion()">ДА</a> <a class="no-btn" onclick="k= k+1; b++; switchQuestion()"> НЕТ </a>';    
+    }
+    function thirdQuestion() {
+        let question = "Предпочитаете ли вы чтение книг встречам с людьми?";
+        document.getElementsByClassName('question')[0].innerHTML = question; 
+        document.getElementsByClassName('answers')[0].innerHTML = '<a onclick="k= k+1; b++; switchQuestion()">ДА</a> <a class="no-btn" onclick="k= k+1;a++; switchQuestion()"> НЕТ </a>';    
+    }
+    function fourthQuestion() {
+        let question = "Любите ли вы часто бывать в компании?";
+        document.getElementsByClassName('question')[0].innerHTML = question; 
+        document.getElementsByClassName('answers')[0].innerHTML = '<a onclick="k= k+1; a++; switchQuestion()">ДА</a> <a class="no-btn" onclick="k= k+1;b++; switchQuestion()"> НЕТ </a>';    
+    }
+    function fifthQuestion() {
+        let question = "Стараетесь ли вы ограничить круг своих знакомств небольшим числом самых близких людей?";
+        document.getElementsByClassName('question')[0].innerHTML = question; 
+        document.getElementsByClassName('answers')[0].innerHTML = '<a onclick="k= k+1; b++; switchQuestion()">ДА</a> <a class="no-btn" onclick="k= k+1;a++; switchQuestion()"> НЕТ </a>'; 
+    }
+    function sixthQuestion() {
+        let question = "Верно ли, что вы обычно молчаливы и сдержанны, когда находитесь среди людей?";
+        document.getElementsByClassName('question')[0].innerHTML = question; 
+        document.getElementsByClassName('answers')[0].innerHTML = '<a onclick="k= k+1; b++; switchQuestion()">ДА</a> <a class="no-btn" onclick="k= k+1;a++; switchQuestion()"> НЕТ </a>';  
+    }
+    function seventhQuestion() {
+        let question = "Верно ли, что вам неприятно бывать в компании, где постоянно подшучивают друг над другом?";
+        document.getElementsByClassName('answers')[0].innerHTML = '<a onclick="k= k+1; b++; switchQuestion()">ДА</a> <a class="no-btn" onclick="k= k+1;a++; switchQuestion()"> НЕТ </a>'; 
+        document.getElementsByClassName('question')[0].innerHTML = question; 
+    }
+    function eightsQuestion() {
+        let question = "Верно ли, что вы такой любитель поговорить, что никогда не упустите удобного случая побеседовать с незнакомым человеком?";
+        document.getElementsByClassName('question')[0].innerHTML = question; 
+        document.getElementsByClassName('answers')[0].innerHTML = '<a onclick="k= k+1; a++; switchQuestion()">ДА</a> <a class="no-btn" onclick="k= k+1;b++; switchQuestion()"> НЕТ </a>';    
+    }
+    function ninesQuestion() {
+        let question = "Трудно ли получить настоящее удовольствие от мероприятий, в которых много участников? ";
+        document.getElementsByClassName('question')[0].innerHTML = question; 
+        document.getElementsByClassName('answers')[0].innerHTML = '<a onclick="k= k+1; b++; switchQuestion()">ДА</a> <a class="no-btn" onclick="k= k+1;a++; switchQuestion()"> НЕТ </a>';    
+    }
+    function answer() {
+        let answer;
+        if (a>b) {
+            answer = "Экстраверт";
+        } else {
+            answer = "Интроверт";
+        }
+        document.getElementsByClassName('question')[0].innerHTML = "Поздравляю, Вы - " + answer; 
+    }
+</script>
+</html>
