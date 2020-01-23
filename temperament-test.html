@@ -15,7 +15,7 @@
                 Готовы начать?
             </div>
             <div class="answers">
-                <a onclick="k++; switchQuestion()">
+                <a onclick="k++; setTimeout(switchQuestion, 200); ">
                     ДА
                 </a>
             </div>
@@ -54,47 +54,47 @@
   
     function firstQuestion() {
         document.getElementsByClassName('question')[0].innerHTML = "Часто ли вы испытываете тягу к новым впечатлениям, чтобы отвлечься, испытать сильные ощущения?";    
-        document.getElementsByClassName('answers')[0].innerHTML = '<a onclick="k= k+1; a++; switchQuestion()">ДА</a> <a class="no-btn" onclick="k= k+1;b++; switchQuestion()"> НЕТ </a>';    
+        document.getElementsByClassName('answers')[0].innerHTML = '<a onclick="k= k+1; a++;  setTimeout(switchQuestion, 200);">ДА</a> <a class="no-btn" onclick="k= k+1;b++;  setTimeout(switchQuestion, 200);"> НЕТ </a>';    
     }
     function seconQuestion() {
         let question = "Быстро ли вы обычно действуете и говорите и не тратите ли много времени на обдумывание?";
         document.getElementsByClassName('question')[0].innerHTML = question; 
-        document.getElementsByClassName('answers')[0].innerHTML = '<a onclick="k= k+1; a++; switchQuestion()">ДА</a> <a class="no-btn" onclick="k= k+1; b++; switchQuestion()"> НЕТ </a>';    
+        document.getElementsByClassName('answers')[0].innerHTML = '<a onclick="k= k+1; a++;  setTimeout(switchQuestion, 200);">ДА</a> <a class="no-btn" onclick="k= k+1; b++;  setTimeout(switchQuestion, 200);"> НЕТ </a>';    
     }
     function thirdQuestion() {
         let question = "Предпочитаете ли вы чтение книг встречам с людьми?";
         document.getElementsByClassName('question')[0].innerHTML = question; 
-        document.getElementsByClassName('answers')[0].innerHTML = '<a onclick="k= k+1; b++; switchQuestion()">ДА</a> <a class="no-btn" onclick="k= k+1;a++; switchQuestion()"> НЕТ </a>';    
+        document.getElementsByClassName('answers')[0].innerHTML = '<a onclick="k= k+1; b++;  setTimeout(switchQuestion, 200);">ДА</a> <a class="no-btn" onclick="k= k+1;a++;  setTimeout(switchQuestion, 200);"> НЕТ </a>';    
     }
     function fourthQuestion() {
         let question = "Любите ли вы часто бывать в компании?";
         document.getElementsByClassName('question')[0].innerHTML = question; 
-        document.getElementsByClassName('answers')[0].innerHTML = '<a onclick="k= k+1; a++; switchQuestion()">ДА</a> <a class="no-btn" onclick="k= k+1;b++; switchQuestion()"> НЕТ </a>';    
+        document.getElementsByClassName('answers')[0].innerHTML = '<a onclick="k= k+1; a++; setTimeout(switchQuestion, 200);">ДА</a> <a class="no-btn" onclick="k= k+1;b++;  setTimeout(switchQuestion, 200);"> НЕТ </a>';    
     }
     function fifthQuestion() {
         let question = "Стараетесь ли вы ограничить круг своих знакомств небольшим числом самых близких людей?";
         document.getElementsByClassName('question')[0].innerHTML = question; 
-        document.getElementsByClassName('answers')[0].innerHTML = '<a onclick="k= k+1; b++; switchQuestion()">ДА</a> <a class="no-btn" onclick="k= k+1;a++; switchQuestion()"> НЕТ </a>'; 
+        document.getElementsByClassName('answers')[0].innerHTML = '<a onclick="k= k+1; b++;  setTimeout(switchQuestion, 200);">ДА</a> <a class="no-btn" onclick="k= k+1;a++;  setTimeout(switchQuestion, 200);"> НЕТ </a>'; 
     }
     function sixthQuestion() {
         let question = "Верно ли, что вы обычно молчаливы и сдержанны, когда находитесь среди людей?";
         document.getElementsByClassName('question')[0].innerHTML = question; 
-        document.getElementsByClassName('answers')[0].innerHTML = '<a onclick="k= k+1; b++; switchQuestion()">ДА</a> <a class="no-btn" onclick="k= k+1;a++; switchQuestion()"> НЕТ </a>';  
+        document.getElementsByClassName('answers')[0].innerHTML = '<a onclick="k= k+1; b++;  setTimeout(switchQuestion, 200);">ДА</a> <a class="no-btn" onclick="k= k+1;a++;  setTimeout(switchQuestion, 200);"> НЕТ </a>';  
     }
     function seventhQuestion() {
         let question = "Верно ли, что вам неприятно бывать в компании, где постоянно подшучивают друг над другом?";
-        document.getElementsByClassName('answers')[0].innerHTML = '<a onclick="k= k+1; b++; switchQuestion()">ДА</a> <a class="no-btn" onclick="k= k+1;a++; switchQuestion()"> НЕТ </a>'; 
+        document.getElementsByClassName('answers')[0].innerHTML = '<a onclick="k= k+1; b++;  setTimeout(switchQuestion, 200);">ДА</a> <a class="no-btn" onclick="k= k+1;a++;  setTimeout(switchQuestion, 200);"> НЕТ </a>'; 
         document.getElementsByClassName('question')[0].innerHTML = question; 
     }
     function eightsQuestion() {
         let question = "Верно ли, что вы такой любитель поговорить, что никогда не упустите удобного случая побеседовать с незнакомым человеком?";
         document.getElementsByClassName('question')[0].innerHTML = question; 
-        document.getElementsByClassName('answers')[0].innerHTML = '<a onclick="k= k+1; a++; switchQuestion()">ДА</a> <a class="no-btn" onclick="k= k+1;b++; switchQuestion()"> НЕТ </a>';    
+        document.getElementsByClassName('answers')[0].innerHTML = '<a onclick="k= k+1; a++;  setTimeout(switchQuestion, 200);">ДА</a> <a class="no-btn" onclick="k= k+1;b++;  setTimeout(switchQuestion, 200);"> НЕТ </a>';    
     }
     function ninesQuestion() {
         let question = "Трудно ли получить настоящее удовольствие от мероприятий, в которых много участников? ";
         document.getElementsByClassName('question')[0].innerHTML = question; 
-        document.getElementsByClassName('answers')[0].innerHTML = '<a onclick="k= k+1; b++; switchQuestion()">ДА</a> <a class="no-btn" onclick="k= k+1;a++; switchQuestion()"> НЕТ </a>';    
+        document.getElementsByClassName('answers')[0].innerHTML = '<a onclick="k= k+1; b++;  setTimeout(switchQuestion, 200);">ДА</a> <a class="no-btn" onclick="k= k+1;a++;  setTimeout(switchQuestion, 200);"> НЕТ </a>';    
     }
     function answer() {
         let answer;
