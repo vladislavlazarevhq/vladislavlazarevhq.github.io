@@ -211,3 +211,19 @@ form {
 .submit:hover {
     box-shadow: 1px 2px 4px grey;
 }
+
+@media screen and (max-width: 1023px) {
+    .container {
+        width: 95%;
+    }
+    .thoughts {
+        background-image: url('https://img4.goodfon.ru/original/2880x1800/7/a7/gorod-rim-italiia-rimskii-forum-kolonny-khram-saturna-italy.jpg');
+        height: 80vh;
+        background-attachment: scroll;
+        background-position: center center;
+        position: relative;
+        margin-bottom: 200px;
+        background-repeat: no-repeat;
+        background-size: auto 100%;
+    }
+}
