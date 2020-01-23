@@ -150,6 +150,7 @@ li {
     cursor: pointer;
     background-repeat: no-repeat;
     transition: .3s;
+    padding: 10px;
     
 }
 .test:hover {
@@ -159,11 +160,19 @@ li {
     
 }
 .test1{
-    background-image: url('../img/holerasangvina.jpg');
+    background: linear-gradient(45deg,#C5DDE8, #EECFBA);
+}
+.test p {
+    color: white;
+    font-size: 26px;
+    text-shadow: #8593a5 1px 1px 0, #8593a5 2px 2px 0, 
+                 #8593a5 3px 3px 0, #8593a5 4px 4px 0, 
+                 #8593a5 5px 5px 0;
+    
+    padding-top: 170px;
 }
 .test2 {
-    background-image: url('../img/introexxtra.jpg');
-    background-size: 110%;
+    background: linear-gradient(to right,#CEAD78, #F6EFD2) ;
 }
 .test2:hover {
     background-size: 120%;
