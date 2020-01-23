@@ -293,10 +293,19 @@ form {
     .quote {
         font-size: 34px;
     }
+    .test p {
+        font-size: 20px;
+    }
+    .test  {
+        padding: 5px;
+    }
 }
 @media screen and (max-width: 420px) {
     input{
         width: 240px;
         font-size:13px;
     } 
+    .test p {
+        font-size: 18px;
+    }
 }
