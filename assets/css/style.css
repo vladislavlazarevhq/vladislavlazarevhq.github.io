@@ -96,13 +96,14 @@ li {
 
 
 .thoughts {
-    background-image: url('../img/kol.jpg');
+    background-image: url('https://img4.goodfon.ru/original/2880x1800/7/a7/gorod-rim-italiia-rimskii-forum-kolonny-khram-saturna-italy.jpg');
     height: 80vh;
     background-attachment: fixed;
-    background-size: 100%;
-    background-position: top;
+    background-position: center center;
     position: relative;
     margin-bottom: 200px;
+    background-repeat: no-repeat;
+    background-size: 160% auto;
 }
 .quote {
     font-size: 52px;
